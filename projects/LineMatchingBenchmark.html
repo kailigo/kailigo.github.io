@@ -58,9 +58,10 @@
 
 	  <div class="row">
 			<div class="col-lg-12 text-center">			
-				<h2 style="text-align:left">Abstract</h2>
-				<h4 style="text-align:justify">				
-               As the vital procedure for exploiting line segments extracted from images for solving computer vision problems, Line Segment Matching (LSM) has received growing attentions from researcher in recent years, and a considerable number of methods have been proposed. However, no one has attempted to solve two major problems in this area. The first is how to evaluate different methods in an unbiased way. All proposed methods were evaluated using images and line segment detectors selected by the authors themselves, making the conclusions based on the somewhat biased experiments less convincing. The second problem is that there is no reliably automatic way to access the correctness of obtained line segment matches, which can often be up to hundreds in quantity. Checking them one by one by visual inspection is the only reliable, but very tedious and error-prone way. In this paper, we target to solve the two problems. We introduce a benchmark which provides the ground truth matches among 30 pairs of line segment sets extracted from 15 representative image pairs using two state-of-the-art line segment detectors. With the benchmark, we evaluated some of the existing LSM methods.</h4>			   
+				<h2 style="text-align:left">Motivations</h2>
+				<h4 style="text-align:justify">			
+			   The proposed benchmark dataset targets to solve two problems in the field of line segment matching. The first is how to evaluate different line segment matching algorithms in an unbiased way. Existing methods were all evaluated using images and line segment detectors selected by the authors themselves, which makes the authors' claims of their algorithms superiorities somewhat less convincing. The second is that there is no reliably automatic way to access the correctness of obtained line segment matches. It is often the case that a line segment matcher obtains hundreds or even thousands of matches from two images. Obviously, checking the matches one by one through visual inspection is very tedious and error-prone work. The proposed benchmark dataset solves these two problems by carefully selecting experimental images and line segment detectors, and providing the ground truth matches among line segments extracted from the selected images. Since the input images and line segments for different line segment matchers are limited to some representative ones, the matching results shall result in convincing conclusions about the relative performances of different line segment matchers. Besides, the benchmark provides the ground truth matches among extracted line segments, which makes it easy to access the correctness of line segment matches automatically. One just needs to compare the line segment matches obtained by a line segment matcher from two images with the ground truth matches identified before in the two images, a detailed report of about the obtained line segment matches can generated reliably and automatically.
+			   </h4>			   
             </div>
       </div>
 	  
@@ -166,110 +167,7 @@
 				<td colspan="1" style="text-align:center">(n) Viewpoint change (wide-baseline)</td>
 				<td colspan="1" style="text-align:center">(o) Viewpoint change (wide-baseline)</td>
 				</tr>	
-			</table>
-			
-			
-			
-
-			
-			<!-- <table id="tab", border="1", align="center", width="80%", valign="middle", cellpadding="10" cellspacing="10"> 							
-					<tr>
-						<td rowspan="2"><div align="center"><font face="Verdana" size="4">		   </font></div></td> 
-						<td colspan="2"><div align="center"><font face="Verdana" size="4">LPI lines</font></div></td> 
-						<td colspan="2"><div align="center"><font face="Verdana" size="4">LS lines </font></div></td> 
-						<td colspan="2"><div align="center"><font face="Verdana" size="4">RPR lines</font></div></td> 
-					</tr> 		
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">Ours</td> 
-						<td><div align="center"><font face="Verdana" size="4">LPI </td>
-						<td><div align="center"><font face="Verdana" size="4">Ours</td> 
-						<td><div align="center"><font face="Verdana" size="4">LS</td> 
-						<td><div align="center"><font face="Verdana" size="4">Ours</td> 
-						<td><div align="center"><font face="Verdana" size="4">RPR</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>1</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(214, 97.5%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(136, 99.3%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(257, 99.2%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(189, 97.9%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(171, 97.2%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(124, 99.2%)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>2</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(362, 99.7%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(328, 99.4%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(579, 99.3%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(241, 99.6%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(298, 100%) </td>  
-						<td><div align="center"><font face="Verdana" size="4">(240, 100%) </td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>3</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(789, 99.6%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(735, 99.5%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(1229, 99.1%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(269, 99.3%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(699, 99.6%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(546, 99.6%)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>4</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(32, 97.0%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(16, 100%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(31, 96.9%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(42, 95.5%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(24, 100%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(23, 95.8%)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>5</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(144, 95.4%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(82, 94.3%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(33, 49.3)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(0, 0)</td> 	   
-						<td><div align="center"><font face="Verdana" size="4">(118, 94.4)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(16, 94.1)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>6</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(309, 99.4%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(276, 99.3%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(526, 99.1%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(214, 99.7%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(260, 97.7%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(124, 99.2%)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>7</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(323, 96.7)</td>
-						<td><div align="center"><font face="Verdana" size="4">(82, 93.2%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(205, 94.0%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(17, 73.9%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(151, 92.1%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(0, 0)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4">P<sub>8</sub></td> 
-						<td><div align="center"><font face="Verdana" size="4">(342, 96.1%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(225, 93.4%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(311, 95.4%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(126, 92.6%)</td>
-						<td><div align="center"><font face="Verdana" size="4">(259, 95.6%)</td> 
-						<td><div align="center"><font face="Verdana" size="4">(137, 94.5%)</td> 
-					</tr> 
-					<tr> 
-						<td><div align="center"><font face="Verdana" size="4"></td> 
-						<td><div align="center"><font face="Verdana" size="4">97.7%</td> 
-						<td><div align="center"><font face="Verdana" size="4">97.3%</td> 
-						<td><div align="center"><font face="Verdana" size="4">91.5%</td> 
-						<td><div align="center"><font face="Verdana" size="4">82.3%</td> 
-						<td><div align="center"><font face="Verdana" size="4">97.1%</td>
-						<td><div align="center"><font face="Verdana" size="4">85.3%</td>
-					</tr>		
-				</table> 				
-				<h4 style="text-align:center">Some essential information about the 15 image pairs used in the benchmark. N1 and N2 denote the numbers of line segments detected in a pair of images using a certain line segment detector, and G denotes the number of ground truth matches in (N1, N2)</h4> -->				
+			</table>		
             </div>
       </div>
 	  
@@ -277,10 +175,43 @@
 	  
 	<div class="row">
 		<div class="col-lg-12 text-center">			
-			<h2 id="ct1" style="text-align:left">Dataset and Codes</h2>
-			<h4 style="text-align:justify">
-			Benchmark dataset and evaluation codes:&nbsp[<a href="https://github.com/kailigo/LineMatchingBenchmark">github</a>]			
-			</h4>
+			<h2 id="ct1" style="text-align:left">Dataset and Source Codes</h2>
+			<h4 style="text-align:justify">	
+			&nbsp&nbsp-&nbsp Benchmark dataset and evaluation codes:&nbsp[<a href="https://github.com/kailigo/LineMatchingBenchmark">github</a>]<br>			
+			&nbsp&nbsp-&nbsp Source codes or executable binaries of some line segment matchers (collected by us, please cite respective papers when using them): <br><br>
+			</h4>			
+			<h4 style="text-align:left">	
+			<table id="tab1", border="1", align="center", width="95%", valign="middle", cellpadding="10" cellspacing="10">				
+					<tr>
+						<td><a href="./LineBenchmark/codes/MSLD.zip">MSLD &nbsp&nbsp</a></td>
+						<td>Z. Wang, F. Wu, and Z. Hu. MSLD: A robust descriptor for line matching. Pattern Recognition, 42(5):941–953, 2009.</td>
+					</tr>
+					<tr>
+						<td><a href="https://github.com/bverhagen/SMSLD">SMSLD &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</a></td>
+						<td>B. Verhagen, R. Timofte, and L. Van Gool. Scale-invariant line descriptors for wide baseline matching. In WACV, 2014.</td>
+					</tr>
+					<tr>
+						<td><a href="./LineBenchmark/codes/LS.zip">LS &nbsp&nbsp</a></td>
+						<td>L. Wang, U. Neumann, and S. You. Wide-baseline image matching using line signatures. In ICCV, 2009.</td>
+					</tr>
+					<tr>
+						<td><a href="./LineBenchmark/codes/LPI.zip">LPI &nbsp&nbsp</a></td>
+						<td>B. Fan, F. Wu, and Z. Hu. Robust line matching through linepoint invariants. Pattern Recognition, 45(2):794–805, 2012.</td>
+					</tr>
+					<tr>
+						<td><a href="./LineBenchmark/codes/LBD.zip">LBD &nbsp&nbsp</a></td>
+						<td>L. Zhang and R. Koch. An efficient and robust line segment matching approach based on LBD descriptor and pairwise geometric consistency. Journal of Visual Communication and Image Representation, 24(7):794-805, 2013.</td>
+					</tr>
+					<tr>
+						<td><a href="./LineBenchmark/codes/LJL.zip">LJL &nbsp&nbsp</a></td>
+						<td>K. Li, J. Yao, X .Lu, L. Li, and Z. Zhang. Hierarchical line matching based on line-junction-line structure descriptor and local homography estimation. Neurocomputing, 184, 207-220，2016.</td>
+					</tr>
+					<tr>
+						<td><a href="./LineBenchmark/codes/VJ.zip">VJ &nbsp&nbsp</a></td>
+						<td>K. Li, J. Yao, M. Xia, and L. Li. Joint point and line segment matching on wide-baseline stereo images. In WACV 2016.</td>
+					</tr>
+				</table>	
+			</h4>							
 		</div>		
 	</div>
 		
@@ -289,7 +220,8 @@
 			<div class="col-lg-12 text-center">		
 				<h2 style="text-align:left">Citation</h2>
 				<h4 style="text-align:justify">
-				Kai Li, Jian Yao, Mengsheng Lu, Yuan Heng, Teng Wu, Yinxuan Li. Line Segment Matching: A Benchmark. IEEE Winter Conference of Applications of Computer Vision (WACV), 2016. <a href="../papers/Line_Segment_Matching_Benchmark_WACV2016.pdf"> <button class="btn btn-success btn-primary" type="button" )"=""><span class="glyphicon glyphicon-file"></span>PDF</button></a></h4>		
+				Kai Li, Jian Yao, Mengsheng Lu, Yuan Heng, Teng Wu, Yinxuan Li. Line Segment Matching: A Benchmark. IEEE Winter Conference of Applications of Computer Vision (WACV), 2016. <a href="../papers/Line_Segment_Matching_Benchmark_WACV2016.pdf"> <button class="btn btn-success btn-primary" type="button" )"=""><span class="glyphicon glyphicon-file"></span>PDF</button></a></h4>	
+				
 			</div>
 		</div> 
 
