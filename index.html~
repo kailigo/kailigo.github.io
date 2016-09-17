@@ -154,7 +154,7 @@ div.paper pre {
 
 <div style="clear: both;">
 <div class="section">
-<h2>About Me (<a href='CV_KaiLi.pdf'>CV</a>)</h2>
+<h2>About Me</h2> <!--(<a href='CV_KaiLi.pdf'>CV</a>)-->
 <div class="paper">
 I am a PhD student in the Computer Engineering Department, Northeastern University at Boston. I focus my research on computer vision and machine learning.
 <br> <br>
@@ -167,7 +167,7 @@ I am a PhD student in the Computer Engineering Department, Northeastern Universi
   <h2>News</h2>
   <div class="paper">
     <ul>
-	<li> I begin my new study journey in Northeastern University</li>   
+	<li> I begin my new study journey in Northeastern University at Boston.</li>   
     </ul>
   </div>
 </div>
@@ -185,8 +185,8 @@ I am a PhD student in the Computer Engineering Department, Northeastern Universi
 	</ul>	
   <h3 id="confpapers">Conferences</h3>
 	<ul>
-  <li><u>Kai Li</u>, Jian Yao. <i>3D Line Segment Reconstruction in Structured Scenes via Coplanar Line Segment Clustering.</i> ACCV Workshop on 3D modelling and applications, 2016.
-  <a href='./papers/Line_Segment_Reconstruction_ICIP2016.pdf'>[PDF]</a>  
+  <li><u>Kai Li</u>, Jian Yao. <i>3D Line Segment Reconstruction in Structured Scenes via Coplanar Line Segment Clustering.</i> ACCV Workshop on 3D modelling and applications, 2016. [PDF]
+<!--  <a href='./papers/Line_Segment_Reconstruction_ICIP2016.pdf'>[PDF]</a>  -->
   </li>	
 	<li><u>Kai Li</u>, Jian Yao, Mengsheng Lu, Heng Yuan, Teng Wu, YinXuan Li. <i>Line Segment Matching: A Benchmark.</i> IEEE Winter Conference of Applications of Computer Vision (<strong>WACV</strong>), 2016.<a href='./papers/Line_Segment_Matching_Benchmark_WACV2016.pdf'>[PDF]</a><a href='./projects/LineMatchingBenchmark'>[Project]</a>
 	</li>	
