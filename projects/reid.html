@@ -80,8 +80,11 @@
 			<div class="col-lg-12 text-center">			
 				<h4 style="text-align:justify">			
 				<h2 style="text-align:left">Targeted Problem</h2>
+				<h4 style="text-align:justify">			
+			    The targeted problem is to identify the same person captured in different resolutions in images. The below figure show the goal: Given a low resolution probe image, the goal is to find the high resolution image in a gallery of images captured the same person. 
+			    </h4>				
 				<!-- <h4 style="text-align:center">Figure 7. P<sub>5</sub>: scale & rotation change.  #DetectedLines: (1334, 569), #TotalMatches: 151, #FalseMatches: 7, accuracy: 95.4% </h4>		-->
-				<a  href="./reid/target_problem.jpg"><img src="./reid/target_problem.jpg" width="1000"></a>
+				<a  href="./reid/target_problem.jpg"><img src="./reid/target_problem.jpg" width="700"></a>
 			   </h4>			   
             </div>
 		</div>
@@ -100,7 +103,7 @@
 		<div class="row">
 			<div class="col-lg-12 text-center">			
 				<h2 style="text-align:left">Experimental Results</h2>
-				<h4 style="text-align:justify"><strong>VIPeR Dataset</strong>: The VIPeR dataset contains 632 persons with each having a pair of images captured from two outdoor cameras. Down-sampling and smoothing operations are performed on all images from camera B to generate LR images. 632 images from camera A and the generated 632 LR images from camera B form 632 image pairs. All image pairs are randomly split into two sets (316 pairs for each set) with one for training and the other for testing. We take images from camera A in the testing set as the HR gallery image set, and use the LR images from camera B in the testing set to construct the LR probe set. Table 1 report the matching results of all compared methods at sampling rate of 1/8. We can see that the proposed algorithm does outperform some existing ones, despite of not being the best one. This proves some effectiveness of the proposed algorithm.</h4>			
+				<h4 style="text-align:justify"><strong>VIPeR Dataset</strong>: The VIPeR dataset contains 632 persons with each having a pair of images captured from two outdoor cameras. Down-sampling and smoothing operations are performed on all images from camera B to generate LR images. 632 images from camera A and the generated 632 LR images from camera B form 632 image pairs. All image pairs are randomly split into two sets (316 pairs for each set) with one for training and the other for testing. We take images from camera A in the testing set as the HR gallery image set, and use the LR images from camera B in the testing set to construct the LR probe set. Table 1 reports the matching results of all compared methods at sampling rate of 1/8. We can see that the proposed algorithm does outperform some existing ones, despite of not being the best one. This proves some effectiveness of the proposed algorithm.</h4>			
 				<table id="tab", border="1", align="center", width="80%", valign="middle", cellpadding="10" cellspacing="10"> 							
 				<!-- <CAPTION ALIGN="bottom", style="text-align:middle, text-size = "5" ">Table 1: Comparative results of the proposed method with three state-of-the-art line matching methods.</caption> -->		
 					<tr> 
@@ -153,11 +156,9 @@
 						<td><div align="center"><font face="Verdana" size="4">48.42</td>
 					</tr> 						
 				</table> 				
-				<h4 style="text-align:center">Table 1: Comparative results of the proposed method with three state-of-the-art line matching methods.</h4>
+				<h4 style="text-align:center">Table 1:Top r ranked matching rates (%) on the VIPeR dataset with sampling rate of 1/8.</h4>
 			</div>
 		</div>
-		
-		
 		
 		<div class="row">
 			<div class="col-lg-12 text-center">			
